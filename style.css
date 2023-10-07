@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("ocean-3605547_1280.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+.mobile{
+    background-color: transparent;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.title{
+    margin: 10px 0px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-head{
+    margin: 8px;
+}
+
+.celsius-value{
+    border-bottom: 2px solid #ffffff;
+    width: 50%;
+    margin: auto;
+}
+
+.degree-type{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    color: #ffffff;
+}
+
+input:focus{
+    outline: none;
+}
+
+#degree{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+    padding: 0 8px;
+    width: 120px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select{
+    background: transparent;
+    color: #ffffff;
+}
+
+select:focus{
+    outline: none;
+}
+
+option{
+    background: blue;
+}
+
+#btn{
+    width: 100%;
+    margin: 10px auto;
+    padding: 6px 0;
+}
+
+.fa{
+    margin: 0 4px;
+}
+
+@media (max-width: 700px) {
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        margin: 20px auto;
+        background-image: none;
+        height: 100vh;
+    }
+
+    .mobile{
+        background-color: #000080;
+        padding: 30px 20px;
+    }
+
+    .title{
+        margin: 10px 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .result{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
